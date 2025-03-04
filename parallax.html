@@ -111,9 +111,20 @@
             mouseX = event.clientX
             mouseY = event.clientY
 
-            firefly.style.left = mouseX + "px"
-            firefly.style.top = mouseY + "px"
+            litejSvetlusko()
         })
+
+        window.addEventListener("scroll", function() {
+            litejSvetlusko()
+        })
+
+        function litejSvetlusko() {
+            let scrollX = window.pageXOffset
+            let scrollY = window.pageYOffset
+
+            firefly.style.left = mouseX + scrollX + "px"
+            firefly.style.top = mouseY + scrollY + "px"
+        }
     </script>
 
 </body>

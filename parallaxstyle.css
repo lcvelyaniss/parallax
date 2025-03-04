@@ -73,6 +73,7 @@ section p {
     border-radius: 50%;
     background-color: #fff3a1;
     filter: blur(2px);
+    transition: 0.5s ease-out;
 }
 
 .nadpis{
